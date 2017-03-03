@@ -35,6 +35,7 @@ if ($ARGV[0] =~ /(.*)(-[.\d]+)/) {
 	$cross_suffix = $1;
     }
 }
+$cross_suffix = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/";
 
 $compiler = "";
 $compiler = LSB       if ($data =~ /COMPILER_LSB/);
